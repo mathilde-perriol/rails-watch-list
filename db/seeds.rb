@@ -9,6 +9,8 @@
 
 puts "Creating lists"
 List.create(name: "Action")
+List.create(name: "Drama")
+List.create(name: "SciFi")
 puts "Done"
 
 Bookmark.create(comment: "minimum 6 caracteres", movie_id: 3, list_id: 4)

@@ -1,5 +1,9 @@
-<h1>Hello</h1>
+<div class="custom-container">
 
-<% @lists.each do |list|%>
-  <p><%= list.name %></p>
-<% end %>
+  <h1>Hello</h1>
+  <%= link_to "create a list", new_list_path %>
+  <% @lists.each do |list|%>
+    <%= link_to list.name, list_path(list) %>
+  <% end %>
+
+</div>
